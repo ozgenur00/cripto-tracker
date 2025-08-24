@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crypto Price Peek</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Crypto Price Peek</h1>
+    <p class="sub">Instant USD prices & 24h change for top coins. Powered by CoinGecko.</p>
+
+    <div class="row">
+      <label for="coins">Coins:</label>
+      <select id="coins" multiple size="3">
+        <option value="bitcoin" selected>Bitcoin (BTC)</option>
+        <option value="ethereum" selected>Ethereum (ETH)</option>
+        <option value="solana" selected>Solana (SOL)</option>
+      </select>
+      <button id="refresh">Refresh</button>
+      <button id="autorefresh">Auto: Off</button>
+    </div>
+
+    <div id="grid" class="grid"></div>
+    <div class="footer" id="updatedAt">Last updated: —</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
